@@ -24,7 +24,7 @@ public class Book extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long bookId;
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = false)
     private String title;
     private String cover;
     private String author;
